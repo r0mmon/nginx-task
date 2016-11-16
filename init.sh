@@ -1,2 +1,2 @@
-ln -sf /home/box/web/etc/nginx.comf /etc/nginx/sites-enabled/default
+ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/default
 sudo service nginx restart
