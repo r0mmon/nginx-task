@@ -9,7 +9,6 @@ def wsgi_application(environ, start_response):
     d = parse_qs(environ['QUERY_STRING'])
     body = ''
     for key, value in d.items():
-        print(key, value[0])
         body += key + '=' + value[0] +'\n'
     start_response(status, headers )
     return [ body ]
